@@ -2,6 +2,7 @@
 const { createApp } = Vue;
 createApp({
     data() {
+
         return {
             // tutti i nostri dati
             mainTitle: "to do list",
@@ -14,6 +15,14 @@ createApp({
                 { title: "Fare la cena", done: false },
             ],
         }
-    }
+    },
+
+    methods: {
+        deleteTask(TaskIndex) {
+            this.newTodo.splice(TaskIndex, 1);
+        },
+
+    },
+
 }).mount("#app");
 // ******** VUE ********
