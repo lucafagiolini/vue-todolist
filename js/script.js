@@ -12,7 +12,6 @@ createApp({
 
 
             taskList: [
-
             ],
         }
     },
@@ -28,6 +27,10 @@ createApp({
             console.log(this.taskList);
             this.newTask = "";
 
+        },
+
+        toggleStatus(index) {
+            this.taskList[index].done = !this.taskList[index].done;
         }
     },
 
