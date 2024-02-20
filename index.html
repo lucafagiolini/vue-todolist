@@ -47,7 +47,7 @@
 
             <div class="input-group mb-3">
                 <input type="text" class="form-control" placeholder="Add a new task" aria-label="Recipient's username"
-                    aria-describedby="button-addon2" v-model="newTask">
+                    aria-describedby="button-addon2" v-model="newTask" @keyup.enter="addTask()">
 
                 <button class="btn btn-outline-secondary" type="button" id="add-task" @click="addTask()">Add</button>
             </div>
