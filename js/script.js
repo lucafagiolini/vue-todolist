@@ -7,11 +7,11 @@ createApp({
             mainTitle: "to do list",
 
             newTodo: [
-                { title: "Fare la spesa", completed: false },
-                { title: "Fare il bucato", completed: false },
-                { title: "Fare il letto", completed: false },
-                { title: "Fare la doccia", completed: false },
-                { title: "Fare la cena", completed: false },
+                { title: "Fare la spesa", done: false },
+                { title: "Fare il bucato", done: true },
+                { title: "Fare il letto", done: false },
+                { title: "Fare la doccia", done: true },
+                { title: "Fare la cena", done: false },
             ],
         }
     }

@@ -32,11 +32,21 @@
         <section>
             <div id="tasks-container" class="mb-5">
                 <ul class="list-group">
-                    <li v-for="(currentTask, index) in newTodo" :key="index" class="list-group-item">
+                    <li v-for="(currentTask, index) in newTodo" :key="index" class="list-group-item"
+                        :class=" currentTask.done == true ? 'text-decoration-line-through' : '' ">
                         {{ currentTask.title }}
                     </li>
                 </ul>
             </div>
+
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Add a new task" aria-label="Recipient's username"
+                    aria-describedby="button-addon2">
+
+                <button class="btn btn-outline-secondary" type="button" id="button-addon2">Add</button>
+            </div>
+
+
 
 
         </section>
